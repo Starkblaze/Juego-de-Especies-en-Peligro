@@ -23,7 +23,7 @@ namespace Especies_en_Peligro_de_Extincion
         public MainWindow()
         {
             InitializeComponent();
-            //Comentario de prueba de GIT
+            
         }
     }
 }
