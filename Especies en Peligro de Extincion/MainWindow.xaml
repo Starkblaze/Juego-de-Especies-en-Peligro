@@ -6,8 +6,10 @@
         xmlns:local="clr-namespace:Especies_en_Peligro_de_Extincion"
         mc:Ignorable="d"
         Title="El Juego de las Especies" Height="750" Width="1300">
+
     <Grid Background="#FF212121">
-        <Grid Name="MenuPrincipal" Visibility="Visible">
+
+        <Grid Name="MenuPrincipal" Visibility="Collapsed">
             <Label x:Name="labelTitulo" Content="EL JUEGO DE LAS ESPECIES" HorizontalAlignment="Left" Height="107" Margin="159,47,0,0" VerticalAlignment="Top" Width="1034" FontWeight="Bold" FontFamily="Tahoma" FontSize="72" Background="{x:Null}" Foreground="White"/>
             <Button x:Name="botonJugar" Content="JUGAR" HorizontalAlignment="Left" Margin="492,540,0,0" VerticalAlignment="Top" Width="371" Height="97" FontFamily="Tahoma" FontSize="48" FontWeight="Bold" Click="BotonJugar_Click"/>
             <Image x:Name="imagenCoco" Margin="971,278,87.333,21.667" Source="coco.png" Stretch="Fill" RenderTransformOrigin="0.5,0.5">
@@ -69,12 +71,19 @@
             <Image x:Name="imagenCazador" Margin="511,301,499.333,129.667" Source="Cazador.png" Stretch="Fill"/>
             <Image x:Name="imagenBasura" Margin="126,301,913.333,152.667" Source="basura.png" Stretch="Fill"/>
             <Image x:Name="imagenHacha" Margin="876,314,86.333,152.667" Source="hacha.png" Stretch="Fill"/>
-            <Button x:Name="botonBasura" Content="Tirar Basura" HorizontalAlignment="Left" Margin="126,604,0,0" VerticalAlignment="Top" Width="252" Height="86" FontFamily="Tahoma" FontSize="36" FontWeight="Bold"/>
-            <Button x:Name="botonCazador" Content="Cazar" HorizontalAlignment="Left" Margin="498,604,0,0" VerticalAlignment="Top" Width="252" Height="86" FontFamily="Tahoma" FontSize="36" FontWeight="Bold"/>
-            <Button x:Name="botonHacha" Content="Cortar Árboles" HorizontalAlignment="Left" Margin="876,604,0,0" VerticalAlignment="Top" Width="285" Height="86" FontFamily="Tahoma" FontSize="36" FontWeight="Bold"/>
+            <Button x:Name="botonBasura" Content="Tirar Basura" HorizontalAlignment="Left" Margin="126,604,0,0" VerticalAlignment="Top" Width="252" Height="86" FontFamily="Tahoma" FontSize="36" FontWeight="Bold" Click="BotonBasura_Click"/>
+            <Button x:Name="botonCazador" Content="Cazar" HorizontalAlignment="Left" Margin="498,604,0,0" VerticalAlignment="Top" Width="252" Height="86" FontFamily="Tahoma" FontSize="36" FontWeight="Bold" Click="BotonCazador_Click"/>
+            <Button x:Name="botonHacha" Content="Cortar Árboles" HorizontalAlignment="Left" Margin="876,604,0,0" VerticalAlignment="Top" Width="285" Height="86" FontFamily="Tahoma" FontSize="36" FontWeight="Bold" Click="BotonHacha_Click"/>
         </Grid>
 
-        <Grid Name="Pregunta2" Visibility="Collapsed"/>
+        <Grid Name="Pregunta2" Visibility="Visible">
+            <Label x:Name="labelPregunta2" Content="Pregunta 2:" HorizontalAlignment="Center" Height="100" Margin="433,48,405.333,0" VerticalAlignment="Top" Width="455" Foreground="White" FontFamily="Tahoma" FontSize="72" FontWeight="Bold"/>
+            <Label x:Name="labelPregunta2P" Content="¿Cuántas especies en peligro existen en México?" HorizontalAlignment="Center" Height="100" Margin="42,183,25.333,0" VerticalAlignment="Top" Width="1226" Foreground="White" FontFamily="Tahoma" FontSize="49" FontWeight="Bold"/>
+            <Image x:Name="imagenBanderaMexico" Margin="446,294,423.333,234.667" Source="bandera-mexico.png" Stretch="Fill"/>
+            <Button x:Name="boton300" Content="300" HorizontalAlignment="Left" Margin="75,545,0,0" VerticalAlignment="Top" Width="329" Height="129" Click="Boton300_Click" FontFamily="Tahoma" FontSize="36" FontWeight="Bold"/>
+            <Button x:Name="boton582" Content="582" HorizontalAlignment="Left" Margin="491,545,0,0" VerticalAlignment="Top" Width="329" Height="129" FontFamily="Tahoma" FontSize="36" FontWeight="Bold" Click="Boton582_Click"/>
+            <Button x:Name="boton1131" Content="1131" HorizontalAlignment="Left" Margin="917,545,0,0" VerticalAlignment="Top" Width="329" Height="129" FontFamily="Tahoma" FontSize="36" FontWeight="Bold" Click="Boton1131_Click"/>
+        </Grid>
 
         <Grid Name="Pregunta3" Visibility="Collapsed">
 

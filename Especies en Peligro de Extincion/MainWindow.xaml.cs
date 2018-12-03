@@ -25,10 +25,49 @@ namespace Especies_en_Peligro_de_Extincion
             InitializeComponent();
         }
 
+        //Inicializar el juego
         private void BotonJugar_Click(object sender, RoutedEventArgs e)
         {
             MenuPrincipal.Visibility = System.Windows.Visibility.Collapsed;
             Pregunta1.Visibility = System.Windows.Visibility.Visible;
+        }
+
+        //Respuestas de la pregunta número 1
+        private void BotonCazador_Click(object sender, RoutedEventArgs e)
+        {
+            Pregunta1.Visibility = System.Windows.Visibility.Collapsed;
+            RespuestaCorrecta.Visibility = System.Windows.Visibility.Visible;
+        }
+
+        private void BotonBasura_Click(object sender, RoutedEventArgs e)
+        {
+            Pregunta1.Visibility = System.Windows.Visibility.Collapsed;
+            RespuestaErronea.Visibility = System.Windows.Visibility.Visible;
+        }
+
+        private void BotonHacha_Click(object sender, RoutedEventArgs e)
+        {
+            Pregunta1.Visibility = System.Windows.Visibility.Collapsed;
+            RespuestaErronea.Visibility = System.Windows.Visibility.Visible;
+        }
+
+        //Respuestas de la pregunta número 2
+        private void Boton300_Click(object sender, RoutedEventArgs e)
+        {
+            Pregunta2.Visibility = System.Windows.Visibility.Collapsed;
+            RespuestaErronea.Visibility = System.Windows.Visibility.Visible;
+        }
+
+        private void Boton582_Click(object sender, RoutedEventArgs e)
+        {
+            Pregunta2.Visibility = System.Windows.Visibility.Collapsed;
+            RespuestaErronea.Visibility = System.Windows.Visibility.Visible;
+        }
+
+        private void Boton1131_Click(object sender, RoutedEventArgs e)
+        {
+            Pregunta2.Visibility = System.Windows.Visibility.Collapsed;
+            RespuestaCorrecta.Visibility = System.Windows.Visibility.Visible;
         }
     }
 }
