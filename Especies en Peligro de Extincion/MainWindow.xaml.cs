@@ -25,9 +25,14 @@ namespace Especies_en_Peligro_de_Extincion
             InitializeComponent();
         }
 
+        protected void Page_Load(object sender, EventArgs e)
+        {
+            
+        }
+
         int pregunta = 1;
         int correctas = 0;
-        int incorrectas = 0;
+        int incorrectas = 10;
 
         //Inicializar el juego
         private void BotonJugar_Click(object sender, RoutedEventArgs e)
@@ -168,6 +173,13 @@ namespace Especies_en_Peligro_de_Extincion
                 RespuestaErronea.Visibility = System.Windows.Visibility.Collapsed;
                 MenuFinal.Visibility = System.Windows.Visibility.Visible;
             }
-        }  
+        }
+
+        //Boton que muestra los resultados
+        private void BotonResultados_Click(object sender, RoutedEventArgs e)
+        {
+            respinco.Content = incorrectas.ToString();
+            respco.Content = correctas.ToString();
+        }
     }
 }

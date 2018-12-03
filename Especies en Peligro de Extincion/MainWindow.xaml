@@ -9,7 +9,7 @@
 
     <Grid Background="#FF212121">
 
-        <Grid Name="MenuPrincipal" Visibility="Visible">
+        <Grid Name="MenuPrincipal" Visibility="Collapsed">
             <Label x:Name="labelTitulo" Content="EL JUEGO DE LAS ESPECIES" HorizontalAlignment="Left" Height="107" Margin="159,47,0,0" VerticalAlignment="Top" Width="1034" FontWeight="Bold" FontFamily="Tahoma" FontSize="72" Background="{x:Null}" Foreground="White"/>
             <Button x:Name="botonJugar" Content="JUGAR" HorizontalAlignment="Left" Margin="492,540,0,0" VerticalAlignment="Top" Width="371" Height="97" FontFamily="Tahoma" FontSize="48" FontWeight="Bold" Click="BotonJugar_Click"/>
             <Image x:Name="imagenCoco" Margin="971,278,87.333,21.667" Source="coco.png" Stretch="Fill" RenderTransformOrigin="0.5,0.5">
@@ -133,8 +133,16 @@
             <Image Margin="469,195,428.333,159.667" Source="incorrecto.png" Stretch="Fill"/>
         </Grid>
 
-        <Grid Name="MenuFinal" Visibility="Collapsed">
-
+        <Grid Name="MenuFinal" Visibility="Visible">
+            <Label x:Name="respinco" Content="0" HorizontalAlignment="Left" Margin="351,347,0,0" VerticalAlignment="Top" Height="162" Width="85" FontSize="80" Foreground="White" FontWeight="Bold"/>
+            <Label x:Name="respco" Content="0" HorizontalAlignment="Left" Margin="914,347,0,0" VerticalAlignment="Top" Height="126" Width="112" FontSize="80" Foreground="White" FontWeight="Bold"/>
+            <Label Content="¡Felicidades!" HorizontalAlignment="Left" Margin="364,30,0,0" VerticalAlignment="Top" Height="169" Width="631" FontSize="100" Foreground="White" FontWeight="Bold"/>
+            <Image Margin="84,545,785.333,-335.333" Source="coco.png" Stretch="Fill"/>
+            <Button x:Name="botonResultados" Content="Resultados" HorizontalAlignment="Left" Margin="435,565,0,0" VerticalAlignment="Top" Width="440" Height="99" Click="BotonResultados_Click" FontSize="65" Foreground="Black" FontWeight="Bold"/>
+            <Image Margin="1099,238,72.333,354.667" Source="corecto.png" Stretch="Fill"/>
+            <Label Content="Incorrectas" HorizontalAlignment="Left" Margin="204,240,0,0" VerticalAlignment="Top" Height="102" Width="382" FontSize="70" Foreground="White" FontWeight="Bold" RenderTransformOrigin="0.575,0.51"/>
+            <Label Content="Correctas" HorizontalAlignment="Left" Margin="752,238,0,0" VerticalAlignment="Top" Height="102" Width="382" FontSize="70" Foreground="White" FontWeight="Bold"/>
+            <Image Margin="33,238,1110.333,342.667" Source="incorrecto.png" Stretch="Fill"/>
         </Grid>
     </Grid>
 </Window>
