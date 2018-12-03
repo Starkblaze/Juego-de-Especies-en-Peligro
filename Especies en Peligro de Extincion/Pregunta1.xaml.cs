@@ -10,25 +10,18 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
 using System.Windows.Shapes;
 
 namespace Especies_en_Peligro_de_Extincion
 {
     /// <summary>
-    /// Interaction logic for MainWindow.xaml
+    /// Interaction logic for Pregunta1.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class Pregunta1 : Window
     {
-        public MainWindow()
+        public Pregunta1()
         {
             InitializeComponent();
-        }
-
-        private void BotonJugar_Click(object sender, RoutedEventArgs e)
-        {
-            MenuPrincipal.Visibility = System.Windows.Visibility.Collapsed;
-            Pregunta1.Visibility = System.Windows.Visibility.Visible;
         }
     }
 }
