@@ -64,12 +64,17 @@
         </Grid>
 
         <Grid Name="Pregunta1" Visibility="Collapsed">
-            
+            <Label x:Name="labelPregunta1" Content="Pregunta 1:" HorizontalAlignment="Center" Height="100" Margin="450,37,388.333,0" VerticalAlignment="Top" Width="455" Foreground="White" FontFamily="Tahoma" FontSize="72" FontWeight="Bold"/>
+            <Label x:Name="labelPregunta1P" Content="¿Cuál acción perjudica más a las especies en peligro?" HorizontalAlignment="Center" Height="100" Margin="42,183,25.333,0" VerticalAlignment="Top" Width="1226" Foreground="White" FontFamily="Tahoma" FontSize="45" FontWeight="Bold"/>
+            <Image x:Name="imagenCazador" Margin="511,301,499.333,129.667" Source="Cazador.png" Stretch="Fill"/>
+            <Image x:Name="imagenBasura" Margin="126,301,913.333,152.667" Source="basura.png" Stretch="Fill"/>
+            <Image x:Name="imagenHacha" Margin="876,314,86.333,152.667" Source="hacha.png" Stretch="Fill"/>
+            <Button x:Name="botonBasura" Content="Tirar Basura" HorizontalAlignment="Left" Margin="126,604,0,0" VerticalAlignment="Top" Width="252" Height="86" FontFamily="Tahoma" FontSize="36" FontWeight="Bold"/>
+            <Button x:Name="botonCazador" Content="Cazar" HorizontalAlignment="Left" Margin="498,604,0,0" VerticalAlignment="Top" Width="252" Height="86" FontFamily="Tahoma" FontSize="36" FontWeight="Bold"/>
+            <Button x:Name="botonHacha" Content="Cortar Árboles" HorizontalAlignment="Left" Margin="876,604,0,0" VerticalAlignment="Top" Width="285" Height="86" FontFamily="Tahoma" FontSize="36" FontWeight="Bold"/>
         </Grid>
 
-        <Grid Name="Pregunta2" Visibility="Collapsed">
-
-        </Grid>
+        <Grid Name="Pregunta2" Visibility="Collapsed"/>
 
         <Grid Name="Pregunta3" Visibility="Collapsed">
 
