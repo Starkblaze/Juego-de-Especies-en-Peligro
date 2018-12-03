@@ -75,6 +75,23 @@ namespace Especies_en_Peligro_de_Extincion
         }
 
         //Respuestas de la pregunta número 3
+        private void Boton50_Click(object sender, RoutedEventArgs e)
+        {
+            Pregunta3.Visibility = System.Windows.Visibility.Collapsed;
+            RespuestaErronea.Visibility = System.Windows.Visibility.Visible;
+        }
+
+        private void Boton100_Click(object sender, RoutedEventArgs e)
+        {
+            Pregunta3.Visibility = System.Windows.Visibility.Collapsed;
+            RespuestaCorrecta.Visibility = System.Windows.Visibility.Visible;
+        }
+
+        private void Boton150_Click(object sender, RoutedEventArgs e)
+        {
+            Pregunta3.Visibility = System.Windows.Visibility.Collapsed;
+            RespuestaErronea.Visibility = System.Windows.Visibility.Visible;
+        }
 
         //Respuestas de la pregunta número 4
         private void BotonItalia_Click(object sender, RoutedEventArgs e)
@@ -106,6 +123,7 @@ namespace Especies_en_Peligro_de_Extincion
         private void BotonSiguiente2_Click(object sender, RoutedEventArgs e)
         {
             incorrectas += 1;
+            pregunta -= 1;
             Avanzador();   
         }
 
@@ -114,6 +132,12 @@ namespace Especies_en_Peligro_de_Extincion
         {
             pregunta += 1;
 
+            if (pregunta == 1)
+            {
+                RespuestaCorrecta.Visibility = System.Windows.Visibility.Collapsed;
+                RespuestaErronea.Visibility = System.Windows.Visibility.Collapsed;
+                Pregunta1.Visibility = System.Windows.Visibility.Visible;
+            }
             if (pregunta == 2)
             {
                 RespuestaCorrecta.Visibility = System.Windows.Visibility.Collapsed;
@@ -144,6 +168,6 @@ namespace Especies_en_Peligro_de_Extincion
                 RespuestaErronea.Visibility = System.Windows.Visibility.Collapsed;
                 MenuFinal.Visibility = System.Windows.Visibility.Visible;
             }
-        }
+        }  
     }
 }

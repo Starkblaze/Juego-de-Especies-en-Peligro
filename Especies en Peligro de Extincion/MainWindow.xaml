@@ -86,8 +86,13 @@
         </Grid>
 
         <Grid Name="Pregunta3" Visibility="Collapsed">
-            <Label x:Name="labelPregunta3" Content="Pregunta 3:" HorizontalAlignment="Center" Height="100" Margin="433,48,405.333,0" VerticalAlignment="Top" Width="455" Foreground="White" FontFamily="Tahoma" FontSize="72" FontWeight="Bold"/>
-            <Label x:Name="labelPregunta3P" Content="¿?" HorizontalAlignment="Center" Height="100" Margin="42,183,25.333,0" VerticalAlignment="Top" Width="1226" Foreground="White" FontFamily="Tahoma" FontSize="49" FontWeight="Bold"/>
+            <Label x:Name="labelPregunta3" Content="Pregunta 3:" HorizontalAlignment="Center" Height="100" Margin="431,27,407.333,0" VerticalAlignment="Top" Width="455" Foreground="White" FontFamily="Tahoma" FontSize="72" FontWeight="Bold"/>
+            <Label x:Name="labelPregunta3P" Content="¿Cuánto pesa el siguiente animal?" HorizontalAlignment="Center" Height="100" Margin="226,132,191.333,0" VerticalAlignment="Top" Width="876" Foreground="White" FontFamily="Tahoma" FontSize="49" FontWeight="Bold"/>
+            <Label x:Name="labeOsoApenino" Content="Oso Apenino" HorizontalAlignment="Center" Height="76" Margin="302,635,602.333,0" VerticalAlignment="Top" Width="389" Foreground="White" FontFamily="Tahoma" FontSize="50" FontWeight="Bold"/>
+            <Image Margin="29,232,361.333,90.667" Source="oso-apenino.png" Stretch="Fill"/>
+            <Button x:Name="boton50" Content="50 - 100 Kg" HorizontalAlignment="Left" Margin="993,232,0,0" VerticalAlignment="Top" Width="249" Height="112" FontFamily="Tahoma" FontSize="36" FontWeight="Bold" Click="Boton50_Click"/>
+            <Button x:Name="boton100" Content="100 - 150 Kg" HorizontalAlignment="Left" Margin="993,377,0,0" VerticalAlignment="Top" Width="249" Height="111" FontFamily="Tahoma" FontSize="36" FontWeight="Bold" Click="Boton100_Click"/>
+            <Button x:Name="boton150" Content="150 - 200 Kg" HorizontalAlignment="Left" Margin="993,521,0,0" VerticalAlignment="Top" Width="249" Height="109" FontFamily="Tahoma" FontSize="36" FontWeight="Bold" Click="Boton150_Click"/>
         </Grid>
 
         <Grid Name="Pregunta4" Visibility="Collapsed">
