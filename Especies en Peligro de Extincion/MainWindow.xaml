@@ -53,12 +53,12 @@
                     </TransformGroup>
                 </Image.RenderTransform>
             </Image>
-            <Label x:Name="labelTrivia" Content="¡Trivia!" HorizontalAlignment="Left" Margin="492,248,0,0" VerticalAlignment="Top" Height="152" Width="355" FontFamily="Tahoma" Foreground="#FFFFD021" FontWeight="Bold" FontSize="100" RenderTransformOrigin="0.5,0.5">
+            <Label x:Name="labelTrivia" Content="¡Trivia!" HorizontalAlignment="Left" Margin="493,267,0,0" VerticalAlignment="Top" Height="152" Width="355" FontFamily="Tahoma" Foreground="#FFFFD021" FontWeight="Bold" FontSize="100" RenderTransformOrigin="0.5,0.5">
                 <Label.RenderTransform>
                     <TransformGroup>
                         <ScaleTransform/>
                         <SkewTransform/>
-                        <RotateTransform Angle="-10.378"/>
+                        <RotateTransform Angle="0.142"/>
                         <TranslateTransform/>
                     </TransformGroup>
                 </Label.RenderTransform>
@@ -70,10 +70,10 @@
             <Label x:Name="labelPregunta1P" Content="¿Cuál acción perjudica más a las especies en peligro?" HorizontalAlignment="Center" Height="100" Margin="42,183,25.333,0" VerticalAlignment="Top" Width="1226" Foreground="White" FontFamily="Tahoma" FontSize="45" FontWeight="Bold"/>
             <Image x:Name="imagenCazador" Margin="511,301,499.333,129.667" Source="Cazador.png" Stretch="Fill"/>
             <Image x:Name="imagenBasura" Margin="126,301,913.333,152.667" Source="basura.png" Stretch="Fill"/>
-            <Image x:Name="imagenHacha" Margin="876,314,86.333,152.667" Source="hacha.png" Stretch="Fill"/>
             <Button x:Name="botonBasura" Content="Tirar Basura" HorizontalAlignment="Left" Margin="126,604,0,0" VerticalAlignment="Top" Width="252" Height="86" FontFamily="Tahoma" FontSize="36" FontWeight="Bold" Click="BotonBasura_Click"/>
             <Button x:Name="botonCazador" Content="Cazar" HorizontalAlignment="Left" Margin="498,604,0,0" VerticalAlignment="Top" Width="252" Height="86" FontFamily="Tahoma" FontSize="36" FontWeight="Bold" Click="BotonCazador_Click"/>
             <Button x:Name="botonHacha" Content="Cortar Árboles" HorizontalAlignment="Left" Margin="876,604,0,0" VerticalAlignment="Top" Width="285" Height="86" FontFamily="Tahoma" FontSize="36" FontWeight="Bold" Click="BotonHacha_Click"/>
+            <Image Margin="859,319,102.333,129.667" Source="hacha3.png" Stretch="Fill" RenderTransformOrigin="0.46,0.527"/>
         </Grid>
 
         <Grid Name="Pregunta2" Visibility="Collapsed">
@@ -100,7 +100,7 @@
             <Label x:Name="labelPregunta4P" Content="¿De que país es el siguiente animal?" HorizontalAlignment="Center" Height="100" Margin="139,133,126.333,0" VerticalAlignment="Top" Width="1028" Foreground="White" FontFamily="Tahoma" FontSize="55" FontWeight="Bold"/>
             <Image Margin="40,242,461.333,100.667" Source="lince-iberico.png" Stretch="Fill"/>
             <Label x:Name="labeLinceIberico" Content="Lince Ibérico" HorizontalAlignment="Center" Height="76" Margin="254,625,650.333,0" VerticalAlignment="Top" Width="389" Foreground="White" FontFamily="Tahoma" FontSize="50" FontWeight="Bold"/>
-            <Button x:Name="botonItalia" Content="" HorizontalAlignment="Left" Margin="939,242,0,0" VerticalAlignment="Top" Width="263" Height="104" Click="BotonItalia_Click">
+            <Button x:Name="botonItalia" HorizontalAlignment="Left" Margin="939,242,0,0" VerticalAlignment="Top" Width="263" Height="104" Click="BotonItalia_Click" Cursor="Arrow">
                 <Button.Background>
                     <ImageBrush ImageSource="bandera-italia.png"/>
                 </Button.Background>

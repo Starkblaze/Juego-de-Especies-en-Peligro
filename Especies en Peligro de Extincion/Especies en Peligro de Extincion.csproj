@@ -143,9 +143,6 @@
     <Resource Include="basura.png" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="hacha.png" />
-  </ItemGroup>
-  <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.6.1">
       <Visible>False</Visible>
       <ProductName>Microsoft .NET Framework 4.6.1 %28x86 and x64%29</ProductName>
@@ -171,6 +168,9 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="vaquita-marina.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="hacha3.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
