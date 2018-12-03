@@ -169,5 +169,8 @@
   <ItemGroup>
     <Resource Include="oso-apenino.png" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="vaquita-marina.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

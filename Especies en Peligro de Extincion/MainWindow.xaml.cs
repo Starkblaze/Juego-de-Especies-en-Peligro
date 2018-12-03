@@ -25,14 +25,9 @@ namespace Especies_en_Peligro_de_Extincion
             InitializeComponent();
         }
 
-        protected void Page_Load(object sender, EventArgs e)
-        {
-            
-        }
-
         int pregunta = 1;
         int correctas = 0;
-        int incorrectas = 10;
+        int incorrectas = 0;
 
         //Inicializar el juego
         private void BotonJugar_Click(object sender, RoutedEventArgs e)
@@ -115,6 +110,25 @@ namespace Especies_en_Peligro_de_Extincion
         {
             Pregunta4.Visibility = System.Windows.Visibility.Collapsed;
             RespuestaErronea.Visibility = System.Windows.Visibility.Visible;
+        }
+
+        //Respuestas de la pregunta número 5
+        private void Boton10_Click(object sender, RoutedEventArgs e)
+        {
+            Pregunta5.Visibility = System.Windows.Visibility.Collapsed;
+            RespuestaErronea.Visibility = System.Windows.Visibility.Visible;
+        }
+
+        private void Boton20_Click(object sender, RoutedEventArgs e)
+        {
+            Pregunta5.Visibility = System.Windows.Visibility.Collapsed;
+            RespuestaErronea.Visibility = System.Windows.Visibility.Visible;
+        }
+
+        private void Boton30_Click(object sender, RoutedEventArgs e)
+        {
+            Pregunta5.Visibility = System.Windows.Visibility.Collapsed;
+            RespuestaCorrecta.Visibility = System.Windows.Visibility.Visible;
         }
 
         //El area que suma las respeustas correctas
