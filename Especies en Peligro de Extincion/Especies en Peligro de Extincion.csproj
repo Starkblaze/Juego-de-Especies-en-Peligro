@@ -100,5 +100,26 @@
   <ItemGroup>
     <Resource Include="Bird-Icon.ico" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="ij5hprra.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="coco.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="mundo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="bandera-mexico.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="bandera-españa.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="bandera-italia.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="cuadro-dialogo.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -5,8 +5,62 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Especies_en_Peligro_de_Extincion"
         mc:Ignorable="d"
-        Title="El Juego de las Especies" Height="450" Width="800">
-    <Grid>
-        
+        Title="El Juego de las Especies" Height="750" Width="1300">
+    <Grid Background="#FF212121">
+        <Label x:Name="labelTitulo" Content="EL JUEGO DE LAS ESPECIES" HorizontalAlignment="Left" Height="107" Margin="159,47,0,0" VerticalAlignment="Top" Width="1034" FontWeight="Bold" FontFamily="Tahoma" FontSize="72" Background="{x:Null}" Foreground="White"/>
+        <Button x:Name="botonJugar" Content="JUGAR" HorizontalAlignment="Left" Margin="492,540,0,0" VerticalAlignment="Top" Width="371" Height="97" FontFamily="Tahoma" FontSize="48" FontWeight="Bold"/>
+        <Image x:Name="imagenCoco" Margin="971,278,87.333,21.667" Source="coco.png" Stretch="Fill" RenderTransformOrigin="0.5,0.5">
+            <Image.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform ScaleX="-1"/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="3.552"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Image.RenderTransform>
+        </Image>
+        <Image x:Name="imagenMundo" Margin="26,474,1047.333,26.667" Source="mundo.png" Stretch="Fill"/>
+        <Image x:Name="imagenMexico" Margin="141,361,1022.333,276.667" Source="bandera-mexico.png" Stretch="Fill" RenderTransformOrigin="0.5,0.5">
+            <Image.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-65.593"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Image.RenderTransform>
+        </Image>
+        <Image Margin="240,455,920.333,187.667" Source="bandera-españa.png" Stretch="Fill" RenderTransformOrigin="0.5,0.5">
+            <Image.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-25.403"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Image.RenderTransform>
+        </Image>
+        <Image Margin="262,578,900.333,64.667" Source="bandera-italia.png" Stretch="Fill" RenderTransformOrigin="0.5,0.5">
+            <Image.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="7.327"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Image.RenderTransform>
+        </Image>
+        <Label x:Name="labelTrivia" Content="¡Trivia!" HorizontalAlignment="Left" Margin="492,248,0,0" VerticalAlignment="Top" Height="152" Width="355" FontFamily="Tahoma" Foreground="#FFFFD021" FontWeight="Bold" FontSize="100" RenderTransformOrigin="0.5,0.5">
+            <Label.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-10.378"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Label.RenderTransform>
+        </Label>
+
+
     </Grid>
 </Window>
