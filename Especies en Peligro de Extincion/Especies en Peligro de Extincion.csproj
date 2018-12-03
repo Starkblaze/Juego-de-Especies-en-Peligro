@@ -157,5 +157,14 @@
       <Install>false</Install>
     </BootstrapperPackage>
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="lince-iberico.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="corecto.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="incorrecto.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

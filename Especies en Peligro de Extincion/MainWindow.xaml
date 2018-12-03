@@ -9,7 +9,7 @@
 
     <Grid Background="#FF212121">
 
-        <Grid Name="MenuPrincipal" Visibility="Collapsed">
+        <Grid Name="MenuPrincipal" Visibility="Visible">
             <Label x:Name="labelTitulo" Content="EL JUEGO DE LAS ESPECIES" HorizontalAlignment="Left" Height="107" Margin="159,47,0,0" VerticalAlignment="Top" Width="1034" FontWeight="Bold" FontFamily="Tahoma" FontSize="72" Background="{x:Null}" Foreground="White"/>
             <Button x:Name="botonJugar" Content="JUGAR" HorizontalAlignment="Left" Margin="492,540,0,0" VerticalAlignment="Top" Width="371" Height="97" FontFamily="Tahoma" FontSize="48" FontWeight="Bold" Click="BotonJugar_Click"/>
             <Image x:Name="imagenCoco" Margin="971,278,87.333,21.667" Source="coco.png" Stretch="Fill" RenderTransformOrigin="0.5,0.5">
@@ -76,7 +76,7 @@
             <Button x:Name="botonHacha" Content="Cortar Árboles" HorizontalAlignment="Left" Margin="876,604,0,0" VerticalAlignment="Top" Width="285" Height="86" FontFamily="Tahoma" FontSize="36" FontWeight="Bold" Click="BotonHacha_Click"/>
         </Grid>
 
-        <Grid Name="Pregunta2" Visibility="Visible">
+        <Grid Name="Pregunta2" Visibility="Collapsed">
             <Label x:Name="labelPregunta2" Content="Pregunta 2:" HorizontalAlignment="Center" Height="100" Margin="433,48,405.333,0" VerticalAlignment="Top" Width="455" Foreground="White" FontFamily="Tahoma" FontSize="72" FontWeight="Bold"/>
             <Label x:Name="labelPregunta2P" Content="¿Cuántas especies en peligro existen en México?" HorizontalAlignment="Center" Height="100" Margin="42,183,25.333,0" VerticalAlignment="Top" Width="1226" Foreground="White" FontFamily="Tahoma" FontSize="49" FontWeight="Bold"/>
             <Image x:Name="imagenBanderaMexico" Margin="446,294,423.333,234.667" Source="bandera-mexico.png" Stretch="Fill"/>
@@ -86,11 +86,30 @@
         </Grid>
 
         <Grid Name="Pregunta3" Visibility="Collapsed">
-
+            <Label x:Name="labelPregunta3" Content="Pregunta 3:" HorizontalAlignment="Center" Height="100" Margin="433,48,405.333,0" VerticalAlignment="Top" Width="455" Foreground="White" FontFamily="Tahoma" FontSize="72" FontWeight="Bold"/>
+            <Label x:Name="labelPregunta3P" Content="¿?" HorizontalAlignment="Center" Height="100" Margin="42,183,25.333,0" VerticalAlignment="Top" Width="1226" Foreground="White" FontFamily="Tahoma" FontSize="49" FontWeight="Bold"/>
         </Grid>
 
         <Grid Name="Pregunta4" Visibility="Collapsed">
-
+            <Label x:Name="labelPregunta4" Content="Pregunta 4:" HorizontalAlignment="Center" Height="100" Margin="431,28,407.333,0" VerticalAlignment="Top" Width="455" Foreground="White" FontFamily="Tahoma" FontSize="72" FontWeight="Bold"/>
+            <Label x:Name="labelPregunta4P" Content="¿De que país es el siguiente animal?" HorizontalAlignment="Center" Height="100" Margin="139,133,126.333,0" VerticalAlignment="Top" Width="1028" Foreground="White" FontFamily="Tahoma" FontSize="55" FontWeight="Bold"/>
+            <Image Margin="40,242,461.333,100.667" Source="lince-iberico.png" Stretch="Fill"/>
+            <Label x:Name="labeLinceIberico" Content="Lince Ibérico" HorizontalAlignment="Center" Height="76" Margin="254,625,650.333,0" VerticalAlignment="Top" Width="389" Foreground="White" FontFamily="Tahoma" FontSize="50" FontWeight="Bold"/>
+            <Button x:Name="botonItalia" Content="" HorizontalAlignment="Left" Margin="939,242,0,0" VerticalAlignment="Top" Width="263" Height="104" Click="BotonItalia_Click">
+                <Button.Background>
+                    <ImageBrush ImageSource="bandera-italia.png"/>
+                </Button.Background>
+            </Button>
+            <Button x:Name="botonEspaña" Content="" HorizontalAlignment="Left" Margin="939,380,0,0" VerticalAlignment="Top" Width="263" Height="104" Click="BotonEspaña_Click">
+                <Button.Background>
+                    <ImageBrush ImageSource="bandera-españa.png"/>
+                </Button.Background>
+            </Button>
+            <Button x:Name="botonMexico" HorizontalAlignment="Left" Margin="939,516,0,0" VerticalAlignment="Top" Width="263" Height="104" Click="BotonMexico_Click" BorderBrush="{x:Null}" Foreground="{x:Null}">
+                <Button.Background>
+                    <ImageBrush ImageSource="bandera-mexico.png"/>
+                </Button.Background>
+            </Button>
         </Grid>
 
         <Grid Name="Pregunta5" Visibility="Collapsed">
@@ -98,11 +117,15 @@
         </Grid>
 
         <Grid Name="RespuestaCorrecta" Visibility="Collapsed">
-
+            <Label x:Name="correcto" Content="¡Respuesta Correcta!" HorizontalAlignment="Center" Height="140" Margin="148,89,163.333,0" VerticalAlignment="Top" Width="982" Foreground="White" FontFamily="Tahoma" FontSize="90" FontWeight="Bold"/>
+            <Image Margin="494,234,477.333,180.667" Source="corecto.png" Stretch="Fill"/>
+            <Button x:Name="botonSiguiente" Content="Siguiente" HorizontalAlignment="Left" Margin="531,596,0,0" VerticalAlignment="Top" Width="253" Height="90" Click="BotonSiguiente_Click" FontFamily="Tahoma" FontSize="40" FontWeight="Bold"/>
         </Grid>
 
         <Grid Name="RespuestaErronea" Visibility="Collapsed">
-
+            <Label x:Name="incorrecto" Content="¡Respuesta Incorrecta!" HorizontalAlignment="Center" Height="140" Margin="133,55,88.333,0" VerticalAlignment="Top" Width="1072" Foreground="White" FontFamily="Tahoma" FontSize="90" FontWeight="Bold"/>
+            <Button x:Name="botonSiguiente2" Content="Siguiente" HorizontalAlignment="Left" Margin="531,596,0,0" VerticalAlignment="Top" Width="253" Height="90" Click="BotonSiguiente2_Click" FontFamily="Tahoma" FontSize="40" FontWeight="Bold"/>
+            <Image Margin="469,195,428.333,159.667" Source="incorrecto.png" Stretch="Fill"/>
         </Grid>
 
         <Grid Name="MenuFinal" Visibility="Collapsed">

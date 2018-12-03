@@ -25,6 +25,10 @@ namespace Especies_en_Peligro_de_Extincion
             InitializeComponent();
         }
 
+        int pregunta = 1;
+        int correctas = 0;
+        int incorrectas = 0;
+
         //Inicializar el juego
         private void BotonJugar_Click(object sender, RoutedEventArgs e)
         {
@@ -68,6 +72,78 @@ namespace Especies_en_Peligro_de_Extincion
         {
             Pregunta2.Visibility = System.Windows.Visibility.Collapsed;
             RespuestaCorrecta.Visibility = System.Windows.Visibility.Visible;
+        }
+
+        //Respuestas de la pregunta número 3
+
+        //Respuestas de la pregunta número 4
+        private void BotonItalia_Click(object sender, RoutedEventArgs e)
+        {
+            Pregunta4.Visibility = System.Windows.Visibility.Collapsed;
+            RespuestaErronea.Visibility = System.Windows.Visibility.Visible;
+        }
+
+        private void BotonEspaña_Click(object sender, RoutedEventArgs e)
+        {
+            Pregunta4.Visibility = System.Windows.Visibility.Collapsed;
+            RespuestaCorrecta.Visibility = System.Windows.Visibility.Visible;
+        }
+
+        private void BotonMexico_Click(object sender, RoutedEventArgs e)
+        {
+            Pregunta4.Visibility = System.Windows.Visibility.Collapsed;
+            RespuestaErronea.Visibility = System.Windows.Visibility.Visible;
+        }
+
+        //El area que suma las respeustas correctas
+        private void BotonSiguiente_Click(object sender, RoutedEventArgs e)
+        {
+            correctas += 1;
+            Avanzador();
+        }
+
+        //El area que suma las respeustas incorrectas
+        private void BotonSiguiente2_Click(object sender, RoutedEventArgs e)
+        {
+            incorrectas += 1;
+            Avanzador();   
+        }
+
+        //Metodo que hace avanzar el juego
+        private void Avanzador()
+        {
+            pregunta += 1;
+
+            if (pregunta == 2)
+            {
+                RespuestaCorrecta.Visibility = System.Windows.Visibility.Collapsed;
+                RespuestaErronea.Visibility = System.Windows.Visibility.Collapsed;
+                Pregunta2.Visibility = System.Windows.Visibility.Visible;
+            }
+            if (pregunta == 3)
+            {
+                RespuestaCorrecta.Visibility = System.Windows.Visibility.Collapsed;
+                RespuestaErronea.Visibility = System.Windows.Visibility.Collapsed;
+                Pregunta3.Visibility = System.Windows.Visibility.Visible;
+            }
+            if (pregunta == 4)
+            {
+                RespuestaCorrecta.Visibility = System.Windows.Visibility.Collapsed;
+                RespuestaErronea.Visibility = System.Windows.Visibility.Collapsed;
+                Pregunta4.Visibility = System.Windows.Visibility.Visible;
+            }
+            if (pregunta == 5)
+            {
+                RespuestaCorrecta.Visibility = System.Windows.Visibility.Collapsed;
+                RespuestaErronea.Visibility = System.Windows.Visibility.Collapsed;
+                Pregunta5.Visibility = System.Windows.Visibility.Visible;
+            }
+            if (pregunta == 6)
+            {
+                RespuestaCorrecta.Visibility = System.Windows.Visibility.Collapsed;
+                RespuestaErronea.Visibility = System.Windows.Visibility.Collapsed;
+                MenuFinal.Visibility = System.Windows.Visibility.Visible;
+            }
         }
     }
 }
